@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Collect : MonoBehaviour
 {
-    void OnTriggerEnter(){
-        Destroy(gameObject);
+    public GameObject pickupeffect;
+    void OnTriggerEnter(Collider other){
+        if(other.gameObject.tag == "Player"){
+            Pickup();
+        }
     }
     void Start()
     {
@@ -16,5 +19,9 @@ public class Collect : MonoBehaviour
     void Update()
     {
         
+    }
+    void Pickup(){
+        // Instantiate(pickupeffect,transform.position,transform.rotation);
+        Destroy(gameObject);
     }
 }
