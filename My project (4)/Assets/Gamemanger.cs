@@ -7,6 +7,7 @@ public class Gamemanger : MonoBehaviour
     bool pause = false;
     public GameObject PauseMenu;
     public GameObject StartMenu;
+    public GameObject UiSound;
     void Awake()
     {
         StartMenu.SetActive(true);
@@ -33,5 +34,14 @@ public class Gamemanger : MonoBehaviour
             StartMenu.SetActive(false);
             Time.timeScale = 1f;
         }
+    }
+
+    public void QuitGame(){
+        Application.Quit();
+    }
+
+    public void PlayUiSound(){
+        UiSound.SetActive(false);
+        UiSound.SetActive(true);
     }
 }
