@@ -8,6 +8,7 @@ public class Gamemanger : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject StartMenu;
     public GameObject UiSound;
+    public GameObject OptionsMenu;
     void Awake()
     {
         StartMenu.SetActive(true);
@@ -43,5 +44,15 @@ public class Gamemanger : MonoBehaviour
     public void PlayUiSound(){
         UiSound.SetActive(false);
         UiSound.SetActive(true);
+    }
+
+    public void Options(){
+        StartMenu.SetActive(false);
+        OptionsMenu.SetActive(true);
+    }
+
+    public void back(){
+        OptionsMenu.SetActive(false);
+        StartMenu.SetActive(true);
     }
 }

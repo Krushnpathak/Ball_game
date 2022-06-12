@@ -5,6 +5,8 @@ using UnityEngine;
 public class Collect : MonoBehaviour
 {
     public GameObject pickupeffect;
+    public GameObject CollectSound;
+
     void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "Player"){
             Pickup();
@@ -22,6 +24,8 @@ public class Collect : MonoBehaviour
     }
     void Pickup(){
         // Instantiate(pickupeffect,transform.position,transform.rotation);
+        CollectSound.SetActive(false);
+        CollectSound.SetActive(true);
         Destroy(gameObject);
     }
 }
