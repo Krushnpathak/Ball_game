@@ -9,6 +9,7 @@ public class Gamemanger : MonoBehaviour
     public GameObject StartMenu;
     public GameObject UiSound;
     public GameObject OptionsMenu;
+    public GameObject Levelselect;
     void Awake()
     {
         StartMenu.SetActive(true);
@@ -54,5 +55,10 @@ public class Gamemanger : MonoBehaviour
     public void back(){
         OptionsMenu.SetActive(false);
         StartMenu.SetActive(true);
+    }
+
+    public void levelselect(){
+        StartMenu.SetActive(false);
+        Levelselect.SetActive(true);
     }
 }

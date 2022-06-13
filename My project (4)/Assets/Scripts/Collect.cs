@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collect : MonoBehaviour
 {
@@ -27,5 +28,6 @@ public class Collect : MonoBehaviour
         CollectSound.SetActive(false);
         CollectSound.SetActive(true);
         Destroy(gameObject);
+        SceneManager.LoadScene("Menu");
     }
 }
