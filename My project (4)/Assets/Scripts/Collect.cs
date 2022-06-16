@@ -28,6 +28,6 @@ public class Collect : MonoBehaviour
         CollectSound.SetActive(false);
         CollectSound.SetActive(true);
         Destroy(gameObject);
-        SceneManager.LoadScene("Menu");
+        // SceneManager.LoadScene("Menu");
     }
 }
