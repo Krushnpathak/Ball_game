@@ -1296,7 +1296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 10.009001, y: 0, z: 0}
 --- !u!1 &150767862
 GameObject:
@@ -1616,6 +1616,7 @@ MonoBehaviour:
   OptionsMenu: {fileID: 1282070331}
   Levelselect: {fileID: 2056179980}
   LevelOverMenu: {fileID: 1986239447}
+  LevelOverlay: {fileID: 946361788}
 --- !u!4 &269311640
 Transform:
   m_ObjectHideFlags: 0
@@ -1628,7 +1629,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &269459938
 GameObject:
@@ -2319,7 +2320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &380548849
 Transform:
   m_ObjectHideFlags: 0
@@ -3773,7 +3774,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 10.009001, y: 0, z: 0}
 --- !u!1 &598477852
 GameObject:
@@ -3821,7 +3822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &611637256
 GameObject:
@@ -4916,7 +4917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &714093112
 Transform:
   m_ObjectHideFlags: 0
@@ -6205,7 +6206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &946361789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6281,7 +6282,7 @@ RectTransform:
   - {fileID: 1930498360}
   - {fileID: 377317664}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8623,7 +8624,7 @@ RectTransform:
   - {fileID: 889134950}
   - {fileID: 877926618}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9945,7 +9946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1528396451
 GameObject:
@@ -10158,7 +10159,7 @@ RectTransform:
   - {fileID: 34838827}
   - {fileID: 1362134615}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10259,7 +10260,7 @@ RectTransform:
   - {fileID: 2050871786}
   - {fileID: 2000550125}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11472,7 +11473,7 @@ Transform:
   - {fileID: 93516679}
   - {fileID: 714093112}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1807790296
 GameObject:
@@ -11580,7 +11581,7 @@ GameObject:
   - component: {fileID: 1822363803}
   m_Layer: 0
   m_Name: BG_Music
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11598,7 +11599,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: c07d6421f88d44d839ee361868d10d64, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.307
+  m_Volume: 0.22
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11690,11 +11691,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822363800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.235048, y: 4.7742844, z: 12.524641}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1928296183}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1822363803
 MonoBehaviour:
@@ -12201,9 +12202,8 @@ Transform:
   m_Children:
   - {fileID: 458317634}
   - {fileID: 1008216221}
-  - {fileID: 1822363802}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1930498359
 GameObject:
@@ -12693,7 +12693,7 @@ RectTransform:
   - {fileID: 130644872}
   - {fileID: 1470693417}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13531,7 +13531,7 @@ RectTransform:
   - {fileID: 898751883}
   - {fileID: 409099868}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13727,6 +13727,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 269311639}
         m_MethodName: PlayUiSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 269311639}
+        m_MethodName: Start_Game
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13986,11 +13997,16 @@ PrefabInstance:
         type: 3}
       propertyPath: ValueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 377317665}
+    - target: {fileID: 1576150389431450370, guid: 36f9d6317272d49f49d909fa9e492635,
+        type: 3}
+      propertyPath: LevelFinish
+      value: 
+      objectReference: {fileID: 1986239447}
     - target: {fileID: 1576150389431450392, guid: 36f9d6317272d49f49d909fa9e492635,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.329827
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1576150389431450392, guid: 36f9d6317272d49f49d909fa9e492635,
         type: 3}
@@ -14000,7 +14016,7 @@ PrefabInstance:
     - target: {fileID: 1576150389431450392, guid: 36f9d6317272d49f49d909fa9e492635,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.954176
+      value: -8.9
       objectReference: {fileID: 0}
     - target: {fileID: 1576150389431450392, guid: 36f9d6317272d49f49d909fa9e492635,
         type: 3}
@@ -14054,7 +14070,7 @@ PrefabInstance:
     - target: {fileID: 2081295343603999568, guid: 26a36342d04d54b499752ca2005c3cfb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.329827
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2081295343603999568, guid: 26a36342d04d54b499752ca2005c3cfb,
         type: 3}
@@ -14064,7 +14080,7 @@ PrefabInstance:
     - target: {fileID: 2081295343603999568, guid: 26a36342d04d54b499752ca2005c3cfb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.954176
+      value: -8.9
       objectReference: {fileID: 0}
     - target: {fileID: 2081295343603999568, guid: 26a36342d04d54b499752ca2005c3cfb,
         type: 3}
@@ -14110,7 +14126,12 @@ PrefabInstance:
         type: 3}
       propertyPath: ValueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 377317665}
+    - target: {fileID: 2081295343603999578, guid: 26a36342d04d54b499752ca2005c3cfb,
+        type: 3}
+      propertyPath: LevelFinish
+      value: 
+      objectReference: {fileID: 1986239447}
     - target: {fileID: 2081295343603999579, guid: 26a36342d04d54b499752ca2005c3cfb,
         type: 3}
       propertyPath: m_Name
@@ -14129,6 +14150,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CollectSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804065562152200489, guid: f608be834ff824bba9128b0e3a877f12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2804065562152200491, guid: f608be834ff824bba9128b0e3a877f12,
         type: 3}

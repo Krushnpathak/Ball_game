@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Gamemanger : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Gamemanger : MonoBehaviour
     public GameObject OptionsMenu;
     public GameObject Levelselect;
     public GameObject LevelOverMenu;
+    public GameObject LevelOverlay;
     void Awake()
     {
         StartMenu.SetActive(true);
@@ -64,7 +66,13 @@ public class Gamemanger : MonoBehaviour
     }
 
     public void LevelOver(){
-        StartMenu.SetActive(true);
-        LevelOverMenu.SetActive(false);
+        LevelOverlay.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // StartMenu.SetActive(true);
+        // LevelOverMenu.SetActive(false);
+    }
+
+    public void Start_Game(){
+        LevelOverlay.SetActive(true);
     }
 }

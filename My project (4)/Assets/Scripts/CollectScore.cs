@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CollectScore : MonoBehaviour
 {
@@ -23,10 +24,14 @@ public class CollectScore : MonoBehaviour
     void Update()
     {
         if(collectvalue >=5){
-            Time.timeScale = 0f;
-            LevelFinish.SetActive(true);
-            collectvalue = 0;
+            level_over();
         }
         ValueText.text = collectvalue.ToString();
+    }
+
+    void level_over(){
+        Time.timeScale = 0f;
+        LevelFinish.SetActive(true);
+        // collectvalue = 0;
     }
 }
