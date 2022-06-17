@@ -12,6 +12,10 @@ public class Optionsmenu : MonoBehaviour
     public GameObject camera1;
     public GameObject camera2;
     public GameObject camera3;
+    public AudioClip music_1;
+    public AudioClip music_2;
+    public AudioClip music_3;
+    public AudioSource BGM;
 
 
     public void SetVolumeBG(float vol){
@@ -45,6 +49,24 @@ public class Optionsmenu : MonoBehaviour
             camera1.SetActive(false);
             camera2.SetActive(false);
             camera3.SetActive(true);
+        }
+    }
+
+    public void ChangeMusic(int val){
+        if(val == 0){
+            BGM.Stop();
+            BGM.clip = music_1;
+            BGM.Play();
+        }
+        else if(val == 1){
+            BGM.Stop();
+            BGM.clip = music_2;
+            BGM.Play();
+        }
+        else if(val == 2){
+            BGM.Stop();
+            BGM.clip = music_3;
+            BGM.Play();
         }
     }
 
